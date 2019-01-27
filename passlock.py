@@ -1,3 +1,6 @@
+import pyperclip
+
+
 class Users:
 
     """
@@ -83,6 +86,11 @@ class Credentials:
         for account in cls.credentials_list:
             if account.acc_name == acc_name:
                 return account
+
+    @classmethod
+    def copy_acc_password(cls, acc_name):
+        account_found = Credentials.find_by_account_name(acc_name)
+        pyperclip.copy(account_found.acc_password)
 
 
 
