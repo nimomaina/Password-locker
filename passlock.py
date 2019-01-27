@@ -10,7 +10,7 @@ class Users:
         self.password = password
 
     def save_user(self):
-        pass
+        Users.users_list.append(self)
 
 
 class Credentials:

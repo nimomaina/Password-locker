@@ -32,7 +32,7 @@ class TestUsers(unittest.TestCase):
         self.assertEqual(self.new_user.user_name, "Judy")
         self.assertEqual(self.new_user.password, "homeboys123")
 
-    def test_user_account_create(self):
+    def test_new_user_creation(self):
         """
         Tests if new users account has been created
         """
@@ -40,5 +40,11 @@ class TestUsers(unittest.TestCase):
         self.assertEqual(len(Users.users_list), 1)
 
 
+class TestCredentials(unittest.TestCase):
 
+    """
+       Test class that defines test cases for the users class behaviours
 
+       Args:
+           unittest.TestCase: TestCase class that helps in creating test cases
+    """
