@@ -48,3 +48,22 @@ class TestCredentials(unittest.TestCase):
        Args:
            unittest.TestCase: TestCase class that helps in creating test cases
     """
+
+    def setUp(self):
+        """
+         Set up method before running tests
+        """
+        self.new_credentials = Credentials("Instagram", "just_nimo","homeboys123")
+
+    def tearDown(self):
+        """
+        Clean after running tests
+        """
+        Credentials.credentials_list = []
+
+    def test_save_credentials(self):
+        """
+        Test to check if credentials is added to credentials list
+        """
+        self.new_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 1)
