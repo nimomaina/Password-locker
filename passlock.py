@@ -5,8 +5,9 @@ class Users:
     """
     pass_account = []
 
-    def __init__(self, account, acc_username, acc_pass ):
+    def __init__(self, user_name, password):
+        self.user_name = user_name
+        self.password = password
 
-        self.account = account
-        self.acc_username = acc_username
-        self.acc_pass = acc_pass
+
+
