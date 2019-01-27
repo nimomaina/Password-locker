@@ -3,7 +3,7 @@ class Users:
     """
     Class that generates instances of user data
     """
-    pass_account = []
+    users_list = []
 
     def __init__(self, user_name, password):
         self.user_name = user_name
