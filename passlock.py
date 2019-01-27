@@ -27,6 +27,15 @@ class Credentials:
         self.acc_password = acc_password
 
     def save_credentials(self):
-        """
 
         """
+        Function that adds credentials into credential list
+        """
+        Credentials.credentials_list.append(self)
+
+    def delete_credentials(self):
+        """
+        Delete crediantials saved from credential list
+        """
+        Credentials.credentials_list.remove(self)
+
