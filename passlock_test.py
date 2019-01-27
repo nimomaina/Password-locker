@@ -1,6 +1,6 @@
 import unittest
-from users import Users
-
+from passlock import Users
+from passlock import Credentials
 
 class TestUsers(unittest.TestCase):
 
@@ -16,6 +16,7 @@ class TestUsers(unittest.TestCase):
         Set up method to run before each test cases.
         """
         self.new_users = Users("Nimo", "homeboys123")
+        self.new_credentials = Credentials("Instagram", "just_nimo", "homeboys123")
 
     def test
 
