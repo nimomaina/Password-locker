@@ -9,6 +9,9 @@ class Users:
         self.user_name = user_name
         self.password = password
 
+    def save_user(self):
+        pass
+
 
 class Credentials:
 

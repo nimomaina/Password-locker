@@ -3,6 +3,7 @@ import pyperclip
 from passlock import Users
 from passlock import Credentials
 
+
 class TestUsers(unittest.TestCase):
 
     """
