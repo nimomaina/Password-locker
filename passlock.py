@@ -57,7 +57,7 @@ class Credentials:
         """
         Delete credentials saved from credential list
         """
-        return Credentials.credentials_list.remove(self)
+        Credentials.credentials_list.remove(self)
 
     @classmethod
     def display_credentials(cls):
@@ -67,12 +67,12 @@ class Credentials:
         return cls.credentials_list
 
     @classmethod
-    def find_cred(cls, acc_name):
+    def find_by_account_name(cls, acc_name):
         """
         Finds credential details using account name
         """
         for found in cls.credentials_list:
-            if found == acc_name:
+            if found.acc_name == acc_name:
                 return found
 
     @classmethod

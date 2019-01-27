@@ -77,3 +77,9 @@ class TestCredentials(unittest.TestCase):
         test_cred.save_credentials()
         self.new_credentials.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
+
+    def test_display_credentials(self):
+        """
+        Method that returns a list of all credentials saved
+        """
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
