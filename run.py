@@ -5,6 +5,7 @@ from passlock import Credentials
 import getpass
 import random
 import string
+import pyperclip
 
 
 def create_user(user_name, password):
@@ -89,7 +90,9 @@ def pw_gen(size=8, chars=string.ascii_letters + string.digits + string.punctuati
     return ''.join(random.choice(chars) for _ in range(size))
 
 
+
 def main():
+    global acc_password, acc_name
     print("Hey, Welcome to Password Locker. Enter username")
 
     user_name = input("")
@@ -98,7 +101,7 @@ def main():
 
     while True:
 
-        print("Use these short codes: dc - display credentials, ac - add credentials, rc - del credentials, ex - exit ")
+        print("Use these short codes: dc - display credentials, ac - add credentials, cp - copy password, ex - exit ")
         print("." * 80)
         credential_code = input(" ")
         if credential_code == 'ac':
@@ -110,6 +113,7 @@ def main():
             acc_username = input()
 
             pass_code = input(" Use 'gp' to generate password, 'mp' to manually input password")
+            print("." * 80)
             if pass_code == 'gp':
                 acc_password = pw_gen()
                 create_credentials(acc_name, acc_username, acc_password)
@@ -133,13 +137,18 @@ def main():
                     print("You have no passwords\n")
             else:
                 print("Wrong password. You can't view the passwords. Try again\n")
-        elif credential_code == 'rc':
+        elif credential_code == 'cp':
             pass_word = getpass.getpass("Enter your password?\n")
             if pass_word == password:
-                acc_name = input("Kindly input the account")
-                if check_existing_credentials(acc_name):
-                    delete_credential(acc_name)
-                    print(f"Successfully deleted {acc_name}")
+                print("Enter the account name of  password you want to copy")
+                get_name = (input("acc name : "))
+                if check_existing_credentials(get_name):
+                    pyperclip.copy(acc_password)
+                    print("\n")
+                    print(f"Password for  {acc_name} successfully copied to clipboard, go ahead and paste it")
+                else:
+                    print("Create a password first to copy")
+                    print("--" * 10)
 
         elif credential_code == "ex":
             print("I hope this app helped you. Bye")
