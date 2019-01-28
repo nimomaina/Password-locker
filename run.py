@@ -3,6 +3,8 @@
 from passlock import Users
 from passlock import Credentials
 import getpass
+import random
+import string
 
 
 def create_user(user_name, password):
@@ -23,8 +25,6 @@ def save_users(user):
 def check_exist_user(user_name):
     """
     Function to check for existing users
-    :param user_name:
-    :return: Boolean
     """
     return Users.users_exist(user_name)
 
@@ -85,44 +85,60 @@ def display_credentials():
     return Credentials.display_credentials()
 
 
+def pw_gen(size=8, chars=string.ascii_letters + string.digits + string.punctuation):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+
 def main():
     print("Hey, Welcome to Password Locker. What is your name?")
 
     user_name = input("")
-    print(f"Hello {user_name}. What can we store for you?")
-    print('\n')
+    password = getpass.getpass('Password:\n')
+    create_user(user_name, password)
 
     while True:
-        print("Use these short codes : ca - create a new account, li - log in, ex -exit")
-        short_code = input().lower()
 
-        if short_code == 'ca':
-            print("Enter Username:")
-            user_name = input(" ")
+        print("Use these short codes: dc - display credentials, ac - add credentials, rc - del credentials, ex - exit ")
+        credential_code = input(" ")
+        if credential_code == 'ac':
+            acc_name = input("Please enter the account like Instagram etc ")
+            acc_username = input(f"Please enter username for {acc_name}")
 
-            print("Enter Password:")
-            password = getpass.getpass(" ")
-            save_users(create_user(user_name, password))  # Create and save new users
-            print('\n')
-            print(f"New User created {user_name}")
-            print('\n')
-        elif short_code == 'li':
-            print("Enter your username and Password to login:")
-            print("-"*50)
-            user_name = input(" ")
-            password = getpass.getpass(" ")
-            user_login = authenticate_user(user_name, password)
-            if user_login == user_name:
-                print(f"Welcome {user_name}. What would you like to do?")
-                while True:
-                    print("Use these short codes: dc - display credentials, ac - add credentials, rc - del credentials ")
-                    credential_code = input(" ")
-                    if credential_code == 'ac':
-                        acc_name = input("Please enter the account like Instagram etc ")
-                        acc_username = input(" ")
+            pass_code = input(" Use 'gp' to generate password, 'mp' to manually input password")
+            if pass_code == 'gp':
+                acc_password = pw_gen()
+                create_credentials(acc_name, acc_username, acc_password)
+                print("\n")
+                print(f"Your password is {acc_password}")
+            elif pass_code == 'mp':
+                acc_password = getpass.getpass('Password:')
+                create_credentials(acc_name, acc_username, acc_password)
+                print("\n")
+                print(f"Your password is {acc_password}")
+        elif credential_code == 'dc':
+            pass_word = getpass.getpass("Enter your password?\n")
+            if pass_word == password:
+                if display_credentials():
+                    for acc in display_credentials():
+                        print("-" * 6, display_credentials().index(acc) + 1, "-" * 6, "\n")
+                        print(f"Account name is {acc.acc_name}\n")
+                        print(f"Username is {acc.acc_username}\n")
+                        print(f"Password is {acc.acc_password}\n")
+                else:
+                    print("You have no passwords\n")
+            else:
+                print("Wrong password. You can't view the passwords. Try again\n")
+        elif credential_code == 'rc':
+            pass_word = getpass.getpass("Enter your password?\n")
+            if pass_word == password:
+                acc = input("Kindly input the account")
+                if
+        elif credential_code == "ex":
+            print("I hope this app helped you. Bye")
+            break
 
 
+if __name__ == '__main__':
 
-
-
+    main()
 
