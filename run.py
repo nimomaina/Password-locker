@@ -90,7 +90,7 @@ def pw_gen(size=8, chars=string.ascii_letters + string.digits + string.punctuati
 
 
 def main():
-    print("Hey, Welcome to Password Locker. What is your name?")
+    print("Hey, Welcome to Password Locker. Enter username")
 
     user_name = input("")
     password = getpass.getpass('Password:\n')
@@ -99,10 +99,15 @@ def main():
     while True:
 
         print("Use these short codes: dc - display credentials, ac - add credentials, rc - del credentials, ex - exit ")
+        print("." * 80)
         credential_code = input(" ")
         if credential_code == 'ac':
-            acc_name = input("Please enter the account like Instagram etc ")
-            acc_username = input(f"Please enter username for {acc_name}")
+            print("Please enter the account like Instagram etc")
+            print("-"*30)
+            acc_name = input(" ")
+            print(f"Please enter username for {acc_name}")
+            print("-" * 30)
+            acc_username = input()
 
             pass_code = input(" Use 'gp' to generate password, 'mp' to manually input password")
             if pass_code == 'gp':
