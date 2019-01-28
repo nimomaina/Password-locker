@@ -57,11 +57,11 @@ def save_credential(credential):
     credential.save_credentials()
 
 
-def delete_credential(credential):
+def delete_credential(acc_name):
     """
     Function that deletes credentials
     """
-    credential.delete_credentials()
+    return Credentials.delete_credentials(acc_name)
 
 
 def find_credentials(acc_name):
@@ -131,8 +131,11 @@ def main():
         elif credential_code == 'rc':
             pass_word = getpass.getpass("Enter your password?\n")
             if pass_word == password:
-                acc = input("Kindly input the account")
-                if
+                acc_name = input("Kindly input the account")
+                if check_existing_credentials(acc_name):
+                    delete_credential(acc_name)
+                    print(f"Successfully deleted {acc_name}")
+
         elif credential_code == "ex":
             print("I hope this app helped you. Bye")
             break

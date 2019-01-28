@@ -92,3 +92,4 @@ class TestCredentials(unittest.TestCase):
         self.new_credentials.save_credentials()
         Credentials.copy_acc_password("Instagram")
         self.assertEqual(self.new_credentials.acc_password.pyperclip.paste())
+
