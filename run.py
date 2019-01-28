@@ -98,6 +98,30 @@ def main():
 
         if short_code == 'ca':
             print("Enter Username:")
+            user_name = input(" ")
+
+            print("Enter Password:")
+            password = getpass.getpass(" ")
+            save_users(create_user(user_name, password))  # Create and save new users
+            print('\n')
+            print(f"New User created {user_name}")
+            print('\n')
+        elif short_code == 'li':
+            print("Enter your username and Password to login:")
+            print("-"*50)
+            user_name = input(" ")
+            password = getpass.getpass(" ")
+            user_login = authenticate_user(user_name, password)
+            if user_login == user_name:
+                print(f"Welcome {user_name}. What would you like to do?")
+                while True:
+                    print("Use these short codes: dc - display credentials, ac - add credentials, rc - del credentials ")
+                    credential_code = input(" ")
+                    if credential_code == 'ac':
+                        acc_name = input("Please enter the account like Instagram etc ")
+                        acc_username = input(" ")
+
+
 
 
 
