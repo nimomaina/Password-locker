@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea032880-8f23-48bf-89b3-cd1535386d45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/passlock_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/passlock_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passlock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="30">
+              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="252">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="e#26#52#0" expanded="true" />
               </folding>
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/passlock_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            <state relative-caret-position="302">
+              <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -53,13 +54,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/passlock_test.py" />
         <option value="$PROJECT_DIR$/passlock.py" />
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/passlock_test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="y" value="25" />
     <option name="width" value="683" />
@@ -103,7 +104,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests for passlock_test.TestCredentials.test_delete">
+    <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/password_locker/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passlock_test.TestCredentials.test_copy_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for passlock_test.TestCredentials.test_delete" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/password_locker/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passlock_test.TestCredentials.test_delete&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for passlock_test.TestCredentials.test_display_credentials" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/password_locker/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passlock_test.TestCredentials.test_display_credentials&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for passlock_test.TestCredentials.test_save_credentials" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/password_locker/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passlock_test.TestCredentials.test_save_credentials&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="password_locker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/password_locker/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;passlock_test.TestUsers.test_new_user_creation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in password_locker" type="tests" factoryName="Unittests" singleton="false" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,6 +210,23 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python tests.Unittests in password_locker" />
+      <item itemvalue="Python tests.Unittests for passlock_test.TestUsers.test_new_user_creation" />
+      <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_save_credentials" />
+      <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_delete" />
+      <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_copy_password" />
+      <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_display_credentials" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_delete" />
+        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_display_credentials" />
+        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_copy_password" />
+        <item itemvalue="Python tests.Unittests for passlock_test.TestUsers.test_new_user_creation" />
+        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_save_credentials" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,14 +242,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_password_locker - 2019.01.27 at 22h 03m 10s.xml">
+    <history-entry file="Unittests_for_passlock_test_TestUsers_test_new_user_creation - 2019.01.28 at 11h 21m 40s.xml">
+      <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_save_credentials - 2019.01.28 at 11h 21m 52s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_save_credentials" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_delete - 2019.01.28 at 11h 22m 01s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_delete" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.28 at 11h 22m 09s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_password_locker - 2019.01.28 at 11h 22m 17s.xml">
       <configuration name="Unittests in password_locker" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_password_locker - 2019.01.27 at 22h 03m 44s.xml">
+    <history-entry file="Unittests_in_password_locker - 2019.01.28 at 11h 22m 37s.xml">
       <configuration name="Unittests in password_locker" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_password_locker - 2019.01.27 at 22h 03m 45s.xml">
-      <configuration name="Unittests in password_locker" configurationId="tests" />
+    <history-entry file="Unittests_for_passlock_test_TestUsers_test_new_user_creation - 2019.01.28 at 11h 22m 44s.xml">
+      <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.28 at 11h 22m 52s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_display_credentials - 2019.01.28 at 11h 25m 36s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_display_credentials" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_delete - 2019.01.28 at 11h 25m 48s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_delete" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -169,7 +283,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="25" width="683" height="702" extended-state="4" />
+    <frame x="0" y="25" width="1366" height="702" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12220566" />
@@ -183,7 +297,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286219" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32570422" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32570422" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32570422" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3274648" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -191,18 +305,18 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24886191" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12220566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32922536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32922536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286219" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32570422" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32570422" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32570422" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3274648" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -263,37 +377,37 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/passlock_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="252">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#26#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/passlock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="30">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passlock_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

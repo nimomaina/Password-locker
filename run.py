@@ -2,14 +2,15 @@
 
 from passlock import Users
 from passlock import Credentials
+import getpass
 
 
 def create_user(user_name, password):
-     """
-     Creates a new user when they login
-     """
-     new_user = Users(user_name, password)
-     return new_user
+    """
+    Creates a new user when they login
+    """
+    new_user = Users(user_name, password)
+    return new_user
 
 
 def save_users(user):
@@ -82,5 +83,22 @@ def display_credentials():
     Function that returns all saved credentials
     """
     return Credentials.display_credentials()
+
+
+def main():
+    print("Hey, Welcome to Password Locker. What is your name?")
+
+    user_name = input("")
+    print(f"Hello {user_name}. What can we store for you?")
+    print('\n')
+
+    while True:
+        print("Use these short codes : ca - create a new account, li - log in, ex -exit")
+        short_code = input().lower()
+
+        if short_code == 'ca':
+            print("Enter Username:")
+
+
 
 

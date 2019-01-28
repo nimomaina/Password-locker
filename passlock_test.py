@@ -1,7 +1,7 @@
 import unittest
-import pyperclip
 from passlock import Users
 from passlock import Credentials
+import pyperclip
 
 
 class TestUsers(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestUsers(unittest.TestCase):
         """
         Set up method to run before each test cases.
         """
-        self.new_user = Users("Nimo", "homeboys123")
+        self.new_user = Users("Judy", "homeboys123")
 
     def tearDown(self):
         """
@@ -53,7 +53,7 @@ class TestCredentials(unittest.TestCase):
         """
          Set up method before running tests
         """
-        self.new_credentials = Credentials("Instagram", "just_nimo","homeboys123")
+        self.new_credentials = Credentials("Instagram", "just_nimo", "homeboys123")
 
     def tearDown(self):
         """
@@ -86,7 +86,7 @@ class TestCredentials(unittest.TestCase):
 
     def test_copy_password(self):
         """
-        Test to confirm the password to copy if of found account name
+        Test to confirm the password to copy of found account name
         """
 
         self.new_credentials.save_credentials()
