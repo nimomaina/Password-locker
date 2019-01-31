@@ -1,11 +1,10 @@
 #!/usr/bin/env python3.6
 
-from passlock import Users
-from passlock import Credentials
+from user import Users
+from credential import Credentials
 import getpass
 import random
 import string
-import pyperclip
 
 
 def create_user(user_name, password):
@@ -23,11 +22,11 @@ def save_users(user):
     user.save_user()
 
 
-def check_exist_user(user_name):
+def check_exist_user(characters):
     """
     Function to check for existing users
     """
-    return Users.users_exist(user_name)
+    return Users.users_exist(characters)
 
 
 def authenticate_user(user_name, password):
@@ -90,68 +89,143 @@ def pw_gen(size=8, chars=string.ascii_letters + string.digits + string.punctuati
     return ''.join(random.choice(chars) for _ in range(size))
 
 
-
 def main():
-    global acc_password, acc_name
-    print("Hey, Welcome to Password Locker. Enter username")
+    # global acc_password, acc_name
+    print("*"*60)
+    print(" "*20, "WELCOME TO PASSWORD LOCKER", " "*20, )
+    print("*"*60)
+    print("\n")
 
-    user_name = input("")
-    password = getpass.getpass('Password:\n')
-    create_user(user_name, password)
+    print("What is your name?\n")
+    user_name = input()
+    print("\n")
+    print(f"Hello {user_name}.\n")
 
     while True:
-
-        print("Use these short codes: dc - display credentials, ac - add credentials, cp - copy password, ex - exit ")
+        print("." * 80)
+        print("""\nUse these short codes: 
+        ca - create account
+        ac - add credentials
+        dc - display credentials
+        dl - delete account
+        ex - exit """)
         print("." * 80)
         credential_code = input(" ")
-        if credential_code == 'ac':
-            print("Please enter the account like Instagram etc")
-            print("-"*30)
-            acc_name = input(" ")
-            print(f"Please enter username for {acc_name}")
-            print("-" * 30)
-            acc_username = input()
+        if credential_code == 'ca':
+            print("Great! Enter the following:")
+            print("*" * 30)
 
-            pass_code = input(" Use 'gp' to generate password, 'mp' to manually input password")
-            print("." * 80)
-            if pass_code == 'gp':
-                acc_password = pw_gen()
-                create_credentials(acc_name, acc_username, acc_password)
-                print("\n")
-                print(f"Your password is {acc_password}")
-            elif pass_code == 'mp':
-                acc_password = getpass.getpass('Password:')
-                create_credentials(acc_name, acc_username, acc_password)
-                print("\n")
-                print(f"Your password is {acc_password}")
-        elif credential_code == 'dc':
-            pass_word = getpass.getpass("Enter your password?\n")
-            if pass_word == password:
-                if display_credentials():
-                    for acc in display_credentials():
-                        print("-" * 6, display_credentials().index(acc) + 1, "-" * 6, "\n")
-                        print(f"Account name is {acc.acc_name}\n")
-                        print(f"Username is {acc.acc_username}\n")
-                        print(f"Password is {acc.acc_password}\n")
-                else:
-                    print("You have no passwords\n")
-            else:
-                print("Wrong password. You can't view the passwords. Try again\n")
-        elif credential_code == 'cp':
-            pass_word = getpass.getpass("Enter your password?\n")
-            if pass_word == password:
-                print("Enter the account name of  password you want to copy")
-                get_name = (input("acc name : "))
-                if check_existing_credentials(get_name):
-                    pyperclip.copy(acc_password)
+            print(" user name:\n")
+            user_name = input()
+            print("_" * 30)
+
+            print("\nPassword:\n")
+            password = input()
+            print("_" * 30)
+            save_users(create_user(user_name, password))
+            print("\n")
+            print(f" Account for user ( {user_name} ) created.\n")
+
+        elif credential_code == 'ac':
+            print("\nPlease log in to your account")
+            print("*" * 40)
+            print(" user name:\n")
+            user_name = input()
+            print("_" * 30)
+
+            print("\nPassword:\n")
+            password = input()
+            print("_" * 30)
+            if check_exist_user(password):
+                print("\n", " "*20, f"Welcome back {user_name}", " "*20,)
+                print("Add New Credentials")
+                print("*" * 40)
+
+                print("\nAccount name:\n")
+
+                acc_name = input()
+
+                print(f"\nUsername for {acc_name}:\n")
+                acc_username = input()
+
+                print("""Choose one of these: 
+                       gp - generate password
+                       mp - manually input passwords
+                       """)
+                pass_code = input(" ")
+
+                if pass_code == 'gp':
+                    acc_password = pw_gen()
                     print("\n")
-                    print(f"Password for  {acc_name} successfully copied to clipboard, go ahead and paste it")
-                else:
-                    print("Create a password first to copy")
-                    print("--" * 10)
+                    print(f"Your password is {acc_password}")
+                    print("." * 80)
+                elif pass_code == 'mp':
+                    acc_password = getpass.getpass('Password:')
+                    print("\n")
+                    print(f"Your password is {acc_password}")
+                    print("." * 80)
 
+                save_credential(create_credentials(acc_name, acc_username, acc_password))
+                print("\n")
+                print(f"""Successfully created Account:
+                            {acc_name}
+                            {acc_username}
+                            {acc_password}""")
+
+            else:
+                print("Authentication error. Please Try again.\n")
+                print("*" * 50)
+                print(" user name:\n")
+                user_name = input()
+                print("_" * 30)
+
+                print("\nPassword:\n")
+                password = input()
+                print("_" * 30)
+                if check_exist_user(password):
+                    print("\n", " "*20, f"Welcome back {user_name}", " "*20,)
+                else:
+                    print("Please create an account first.\n")
+
+        elif credential_code == 'dc':
+            print("\n", " " * 20, "List of accounts you have saved", " " * 20, )
+
+            if display_credentials():
+                for credential in display_credentials():
+
+                    print(f"""Account:
+                            {credential.acc_name}
+                            {credential.acc_username}
+                            {credential.acc_password}""")
+            else:
+                print("\n Sorry you don't have any accounts")
+        # elif credential_code == 'cp':
+        #     pass_word = getpass.getpass("Enter your password?\n")
+        #     if pass_word == password:
+        #         print("Enter the account name of  password you want to copy")
+        #         get_name = (input("acc name : "))
+        #         if check_existing_credentials(get_name):
+        #             pyperclip.copy(acc_password)
+        #             print("\n")
+        #             print(f"Password for  {acc_name} successfully copied to clipboard, go ahead and paste it")
+        #         else:
+        #             print("Create a password first to copy")
+        #             print("--" * 10)
+        elif credential_code == "dl":
+            print("Enter account name you want to delete")
+            print("*"*30)
+            search_account = input()
+            if check_existing_credentials(search_account):
+                search_credential = find_credentials(search_account)
+                print(f"Account: {search_credential.acc_name}\nUsername: {search_credential.acc_username}\nPassword: {search_credential.acc_password}")
+                print(f"Confirm you want to delete account {search_credential.acc_name} ? \n Yes \n No ")
+                answer = input().lower()
+
+                if answer == 'Yes':
+                    delete_credential(search_credential)
+                    print("Account has been deleted")
         elif credential_code == "ex":
-            print("I hope this app helped you. Bye")
+            print("Sad to see you leave (^__^) \n I hope this app helped you. Bye")
             break
 
 

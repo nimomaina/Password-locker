@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea032880-8f23-48bf-89b3-cd1535386d45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credential.py" beforeDir="false" afterPath="$PROJECT_DIR$/credential.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credential_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/credential_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passlock.py" beforeDir="false" afterPath="$PROJECT_DIR$/passlock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passlock_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/passlock_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +22,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passlock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="90" column="25" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="25" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
+        <entry file="file://$PROJECT_DIR$/user.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1322">
-              <caret line="152" column="37" lean-forward="true" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+            <state relative-caret-position="180">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/credential.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
               <folding>
-                <element signature="e#26#52#0" expanded="true" />
+                <element signature="e#1#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/credential_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+              <folding>
+                <element signature="e#26#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -48,14 +96,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passlock_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -66,24 +107,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/passlock.py" />
         <option value="$PROJECT_DIR$/passlock_test.py" />
+        <option value="$PROJECT_DIR$/credential_test.py" />
+        <option value="$PROJECT_DIR$/user.py" />
+        <option value="$PROJECT_DIR$/user_test.py" />
+        <option value="$PROJECT_DIR$/credential.py" />
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="688" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="686" />
     <option name="y" value="25" />
-    <option name="width" value="678" />
+    <option name="width" value="680" />
     <option name="height" value="702" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Problems'; set:Problems; class com.intellij.psi.search.scope.ProblemsScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -98,11 +143,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="password_locker" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flask" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -169,7 +224,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for passlock_test.TestCredentials.test_display_credentials" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for user_test.TestUsers.test_users_exists" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,11 +235,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;passlock_test.TestCredentials.test_display_credentials&quot;" />
+      <option name="_new_target" value="&quot;user_test.TestUsers.test_users_exists&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in passlock_test.py" type="tests" factoryName="Unittests" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="password_locker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,8 +250,8 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;passlock_test.TestUsers.test_new_user_creation&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/passlock_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in password_locker" type="tests" factoryName="Unittests" singleton="false" nameIsGenerated="true">
@@ -230,20 +285,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.run" />
       <item itemvalue="Python tests.Unittests in password_locker" />
-      <item itemvalue="Python tests.Unittests for passlock_test.TestUsers.test_new_user_creation" />
       <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_delete" />
       <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_copy_password" />
-      <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_display_credentials" />
-      <item itemvalue="Python.run" />
+      <item itemvalue="Python tests.Unittests in passlock_test.py" />
+      <item itemvalue="Python tests.Unittests for user_test.TestUsers.test_users_exists" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_delete" />
-        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_display_credentials" />
+        <item itemvalue="Python tests.Unittests for user_test.TestUsers.test_users_exists" />
         <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_copy_password" />
-        <item itemvalue="Python tests.Unittests for passlock_test.TestUsers.test_new_user_creation" />
+        <item itemvalue="Python tests.Unittests in passlock_test.py" />
+        <item itemvalue="Python tests.Unittests for passlock_test.TestCredentials.test_delete" />
       </list>
     </recent_temporary>
   </component>
@@ -258,27 +313,38 @@
       <option name="presentableId" value="Default" />
       <updated>1548613662683</updated>
     </task>
+    <task id="LOCAL-00001" summary="created separate test files">
+      <created>1548942060073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548942060073</updated>
+    </task>
+    <task id="LOCAL-00002" summary="created separate classes to different files">
+      <created>1548942079020</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548942079020</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Correct the test class. Add __name__ function">
+      <created>1548942288981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548942288981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Edit test for users.">
+      <created>1548942485147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548942485148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_passlock_test_TestUsers_test_new_user_creation - 2019.01.28 at 11h 21m 40s.xml">
-      <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_save_credentials - 2019.01.28 at 11h 21m 52s.xml">
-      <configuration name="Unittests for passlock_test.TestCredentials.test_save_credentials" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_delete - 2019.01.28 at 11h 22m 01s.xml">
-      <configuration name="Unittests for passlock_test.TestCredentials.test_delete" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.28 at 11h 22m 09s.xml">
-      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_password_locker - 2019.01.28 at 11h 22m 17s.xml">
-      <configuration name="Unittests in password_locker" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_password_locker - 2019.01.28 at 11h 22m 37s.xml">
-      <configuration name="Unittests in password_locker" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_passlock_test_TestUsers_test_new_user_creation - 2019.01.28 at 11h 22m 44s.xml">
       <configuration name="Unittests for passlock_test.TestUsers.test_new_user_creation" configurationId="tests" />
     </history-entry>
@@ -291,6 +357,24 @@
     <history-entry file="Unittests_for_passlock_test_TestCredentials_test_delete - 2019.01.28 at 11h 25m 48s.xml">
       <configuration name="Unittests for passlock_test.TestCredentials.test_delete" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_passlock_test_py - 2019.01.31 at 15h 05m 23s.xml">
+      <configuration name="Unittests in passlock_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.31 at 15h 05m 48s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.31 at 15h 05m 51s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_passlock_test_TestCredentials_test_copy_password - 2019.01.31 at 15h 06m 25s.xml">
+      <configuration name="Unittests for passlock_test.TestCredentials.test_copy_password" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_user_test_TestUsers_test_users_exists - 2019.01.31 at 16h 52m 01s.xml">
+      <configuration name="Unittests for user_test.TestUsers.test_users_exists" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_user_test_TestUsers_test_users_exists - 2019.01.31 at 16h 52m 27s.xml">
+      <configuration name="Unittests for user_test.TestUsers.test_users_exists" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,21 +386,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="702" extended-state="6" />
+    <frame x="686" y="25" width="680" height="702" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05961252" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.33020344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32922536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286219" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32570422" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31690142" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32685512" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32570422" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39929327" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32394367" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31514084" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32685512" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -324,20 +408,20 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12220566" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33020344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32922536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286219" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32685512" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3286219" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39929327" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32570422" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32570422" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3162544" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3274648" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32685512" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,6 +479,24 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created separate test files" />
+    <MESSAGE value="created separate classes to different files" />
+    <MESSAGE value="Correct the test class. Add __name__ function" />
+    <MESSAGE value="Edit test for users." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit test for users." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/user_test.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
@@ -403,40 +505,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passlock_test.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passlock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passlock_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/credential_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/user_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1322">
-          <caret line="152" column="37" lean-forward="true" selection-start-line="152" selection-start-column="37" selection-end-line="152" selection-end-column="37" />
+        <state relative-caret-position="243">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <element signature="e#26#52#0" expanded="true" />
+            <element signature="e#1#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passlock.py">
+    <entry file="file://$PROJECT_DIR$/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/credential.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="227" column="50" selection-start-line="227" selection-start-column="50" selection-end-line="227" selection-end-column="50" />
+          <folding>
+            <element signature="e#26#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
