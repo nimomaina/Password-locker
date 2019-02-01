@@ -199,18 +199,7 @@ def main():
                             {credential.acc_password}""")
             else:
                 print("\n Sorry you don't have any accounts")
-        # elif credential_code == 'cp':
-        #     pass_word = getpass.getpass("Enter your password?\n")
-        #     if pass_word == password:
-        #         print("Enter the account name of  password you want to copy")
-        #         get_name = (input("acc name : "))
-        #         if check_existing_credentials(get_name):
-        #             pyperclip.copy(acc_password)
-        #             print("\n")
-        #             print(f"Password for  {acc_name} successfully copied to clipboard, go ahead and paste it")
-        #         else:
-        #             print("Create a password first to copy")
-        #             print("--" * 10)
+       
         elif credential_code == "dl":
             print("Enter account name you want to delete")
             print("*"*30)
@@ -218,10 +207,10 @@ def main():
             if check_existing_credentials(search_account):
                 search_credential = find_credentials(search_account)
                 print(f"Account: {search_credential.acc_name}\nUsername: {search_credential.acc_username}\nPassword: {search_credential.acc_password}")
-                print(f"Confirm you want to delete account {search_credential.acc_name} ? \n Yes \n No ")
+                print(f"Confirm you want to delete account {search_credential.acc_name} ? \ny\nn")
                 answer = input().lower()
 
-                if answer == 'Yes':
+                if answer == 'y':
                     delete_credential(search_credential)
                     print("Account has been deleted")
         elif credential_code == "ex":
